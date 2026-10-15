@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA VOID // Product Specs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-group">
+            <div class="logo-icon"></div>
+            <div>
+                <h1 class="brand-title">AURA VOID</h1>
+                <p class="brand-sub">PRO SERIES // MK-I</p>
+            </div>
+        </div>
+
+        <div class="nav-status">
+            <span class="status-dot"></span> SYS_DIAG: HARDWARE MATRIX MK-I
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">OVERVIEW / HOME</a>
+            <a href="product-info.html" class="active">PRODUCT SPECS</a>
+            <a href="order.html">ORDER NOW</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="order.html" class="btn btn-cyan-sm">DEPLOY UNIT</a>
+        </div>
+    </header>
+
+    <!-- SPECS CONTENT -->
+    <main class="page-container">
+        <div class="specs-header">
+            <div class="badge-tag">SCHEMATIC CAD-EXPLODED // INTERNAL STACK</div>
+            <h1 class="page-title">SURGICAL ARCHITECTURE</h1>
+            <p class="page-desc">Explore the multi-chamber modular acoustics engineered from aerospace alloy, planar diaphragms, and sub-5ms low latency RF topologies.</p>
+        </div>
+
+        <div class="filter-tabs">
+            <button class="tab-btn active" onclick="switchTab('all')">ALL ARRAYS</button>
+            <button class="tab-btn" onclick="switchTab('core')">ACOUSTIC CORE</button>
+            <button class="tab-btn" onclick="switchTab('rf')">RF & DSP</button>
+        </div>
+
+        <!-- EXPLODED VIEW DIAGRAM -->
+        <div class="exploded-view-card">
+            <img src="assets/exploded-view.jpg" alt="AURA VOID Internal Architecture" class="exploded-img">
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

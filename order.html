@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA VOID // Order Deployment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-group">
+            <div class="logo-icon"></div>
+            <div>
+                <h1 class="brand-title">AURA VOID</h1>
+                <p class="brand-sub">PRO SERIES // MK-I</p>
+            </div>
+        </div>
+
+        <div class="nav-status">
+            <span class="status-dot"></span> BATCH MK-1 DEPLOYMENT ACTIVE
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">OVERVIEW / HOME</a>
+            <a href="product-info.html">PRODUCT SPECS</a>
+            <a href="order.html" class="active">ORDER NOW</a>
+        </nav>
+
+        <div class="nav-actions">
+            <span class="rating">★★★★★ 4.97</span>
+        </div>
+    </header>
+
+    <!-- ORDER SECTION -->
+    <main class="order-container">
+        <!-- LEFT: PRODUCT IMAGE & DOCK -->
+        <div class="order-media">
+            <img src="assets/dock-headset.jpg" alt="AURA VOID Dock" class="dock-img">
+            <div class="dock-tag">FAST_QI // DOCKED 100%</div>
+        </div>
+
+        <!-- RIGHT: SELECTION & CHECKOUT -->
+        <div class="order-form-panel">
+            <div class="product-title-area">
+                <span class="sub-label">TACTICAL AUDIO SYSTEM // MK-I</span>
+                <h1 class="order-product-name">AURA VOID WIRELESS</h1>
+                <p class="product-subtext">Low-latency planar acoustic engine with calibrated dual-band wireless transceiver.</p>
+            </div>
+
+            <!-- STEP 1: BUNDLE SELECTION -->
+            <div class="form-section">
+                <div class="section-num">01 // SELECT CONFIGURATION BUNDLE</div>
+                <div class="bundle-options">
+                    <div class="bundle-card" onclick="selectBundle(this, 299)">
+                        <div class="bundle-header">Standard Headset</div>
+                        <div class="bundle-price">$299</div>
+                        <small>Cable Charging Only</small>
+                    </div>
+                    <div class="bundle-card active" onclick="selectBundle(this, 349)">
+                        <span class="badge-founder">FOUNDER PASS</span>
+                        <div class="bundle-header">Founder's Dock Bundle</div>
+                        <div class="bundle-price">$349 <del>$399</del></div>
+                        <small>Includes $99 CNC Aluminum Dock</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 2: FINISH SELECTION -->
+            <div class="form-section">
+                <div class="section-num">02 // SELECT CHASSIS FINISH</div>
+                <div class="finish-options">
+                    <div class="finish-btn" onclick="selectFinish(this)">
+                        <span class="color-dot obsidian"></span> OBSIDIAN
+                    </div>
+                    <div class="finish-btn active" onclick="selectFinish(this)">
+                        <span class="color-dot cyan"></span> NEON CYAN
+                    </div>
+                    <div class="finish-btn" onclick="selectFinish(this)">
+                        <span class="color-dot carbon"></span> CARBON
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3: EXPRESS DEPLOY -->
+            <div class="form-section">
+                <div class="section-num">03 // EXPRESS OPERATOR DEPLOY</div>
+                <div class="payment-btns">
+                    <button class="pay-btn white" onclick="completeOrder('Apple Pay')"> Apple Pay</button>
+                    <button class="pay-btn dark" onclick="completeOrder('Google Pay')">G Pay</button>
+                </div>
+            </div>
+
+            <!-- SUMMARY & TOTAL -->
+            <div class="order-summary">
+                <div class="summary-row">
+                    <span>Hardware Allocation</span>
+                    <span id="subtotal-display">$349.00</span>
+                </div>
+                <div class="summary-row highlight">
+                    <span>Tactical Air Transport</span>
+                    <span class="free-badge">FREE PRIORITY</span>
+                </div>
+                <hr class="divider">
+                <div class="summary-row total">
+                    <span>TOTAL DEPLOYMENT COST</span>
+                    <span id="total-display" class="total-price">$349.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
